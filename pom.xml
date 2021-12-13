@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+         
     <groupId>org.example</groupId>
     <artifactId>untitled2</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -61,6 +62,25 @@
     </build>
 
     <properties>
+        <sonar.coverage.exclusions>
+                 src/main/java/Direction.java
+                 ,
+                 src/main/java/DrawUtils.java
+                 ,
+                 src/main/java/GameBoard.java
+                 ,
+                 src/main/java/GameBoardMove.java
+                 ,
+                 src/main/java/Tile.java
+                 ,
+                 src/main/java/Start.java
+                 ,
+                 src/main/java/Game.java
+                 ,
+                 src/main/java/Keys.java
+                 ,
+                 src/main/java/Point.java
+        </sonar.coverage.exclusions>       
         <sonar.organization>egor543</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <maven.compiler.source>11</maven.compiler.source>
